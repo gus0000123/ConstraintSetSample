@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.ConstraintSet
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var isopen = false
+    var isopen = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
