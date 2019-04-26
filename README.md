@@ -10,4 +10,4 @@
 ![Overview](https://github.com/gus0000123/ConstraintSetSample/blob/master/gif/2.main_02.png)
 
 # 3. 결과화면 
-![Overview](https://github.com/gus0000123/ConstraintSetSample/blob/master/gif/3.setAnimation.mp4)
+![Overview](https://github.com/gus0000123/ConstraintSetSample/blob/master/gif/3.setAnimation.gif)
