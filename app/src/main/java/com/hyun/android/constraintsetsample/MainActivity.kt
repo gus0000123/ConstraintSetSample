@@ -21,13 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_add.setOnClickListener {
             if (isopen) {
-                Log.d("TAG","btn_add onClick")
                 updateView(R.layout.activity_main_alt)
                 btn_add.text = "+"
                 tv_contents.text = "2019-04-26 15:57 합정동에서 작성"
 
             } else {
-                Log.d("TAG","btn_add_back onClick")
                 updateView(R.layout.activity_main)
                 btn_add.text = "+ 할일 추가"
                 tv_contents.text = "할일 목록을 입력하세요"
