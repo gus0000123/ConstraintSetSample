@@ -1,167 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".MainActivity">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/root"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@android:color/white"
+                                                   tools:context=".MainActivity">
 
     <FrameLayout
-        android:id="@+id/fl_top"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:id="@+id/et_sample"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/sample_back_et"
-        android:gravity="top"
-        android:textColor="#2d2d2d"
-        android:hint="할일을 작성하세요."
-        android:orientation="vertical"
-        android:padding="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_div02" />
+            android:id="@+id/et_sample"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/sample_back_et"
+            android:gravity="top"
+            android:textColor="#2d2d2d"
+            android:hint="할일을 작성하세요."
+            android:orientation="vertical"
+            android:padding="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_div02"/>
 
     <FrameLayout
-        android:id="@+id/fl_botton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#f1f1f1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+            android:id="@+id/fl_botton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#f1f1f1"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"/>
 
     <TextView
-        android:id="@+id/tv_todo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="todo"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/tv_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="todo"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_contents"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="100dp"
-        android:text="할일 목록을 입력하세요"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fl_div01" />
+            android:id="@+id/tv_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="100dp"
+            android:text="할일 목록을 입력하세요"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_div01"/>
 
 
     <Button
-        android:id="@+id/btn_add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/sample_back"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="+"
-        android:textColor="@android:color/white"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fl_div02"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fl_div02" />
+            android:id="@+id/btn_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/sample_back"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fl_div02"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fl_div02"/>
 
 
     <LinearLayout
-        android:id="@+id/ll_sample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline">
+            android:id="@+id/ll_sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="1. 2019.04.06 여행가기"
-            android:textColor="#696969"
-            android:textSize="16dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="1. 2019.04.06 여행가기"
+                android:textColor="#696969"
+                android:textSize="16dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="2. 2019.04.07 영화보러 홍대가기"
-            android:textColor="#696969"
-            android:textSize="16dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="2. 2019.04.07 영화보러 홍대가기"
+                android:textColor="#696969"
+                android:textSize="16dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="3. 2019.05.08 자전거타고 4대강 종주"
-            android:textColor="#696969"
-            android:textSize="16dp" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="4. 2019.06.08 스타리그 결승전 직관"
-            android:textColor="#696969"
-            android:textSize="16dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="3. 2019.05.08 자전거타고 4대강 종주"
+                android:textColor="#696969"
+                android:textSize="16dp"/>
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="5. 2019.12.22 AWS professional 자격증 취득"
-            android:textColor="#696969"
-            android:textSize="16dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="4. 2019.06.08 스타리그 결승전 직관"
+                android:textColor="#696969"
+                android:textSize="16dp"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="5. 2019.12.22 AWS professional 자격증 취득"
+                android:textColor="#696969"
+                android:textSize="16dp"/>
 
     </LinearLayout>
 
 
     <FrameLayout
-        android:id="@+id/fl_div01"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="26dp"
-        android:background="#f1f1f1"
-        app:layout_constraintTop_toBottomOf="@id/tv_todo" />
+            android:id="@+id/fl_div01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="#f1f1f1"
+            app:layout_constraintTop_toBottomOf="@id/tv_todo"/>
 
     <FrameLayout
-        android:id="@+id/fl_div02"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:background="#f1f1f1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_contents" />
+            android:id="@+id/fl_div02"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#f1f1f1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_contents"/>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1" />
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
